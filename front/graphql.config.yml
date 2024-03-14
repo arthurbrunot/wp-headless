@@ -1,0 +1,7 @@
+schema: schema.graphql
+documents: '**/*.graphql'
+extensions:
+    endpoints:
+        default:
+          url: 'https://bedrock.p82.dbm-local.com/wp/graphql'
+          introspect: true

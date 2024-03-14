@@ -1,0 +1,35 @@
+query Posts {
+  posts {
+      nodes {
+          id
+          author {
+              node {
+                  name
+                  email
+              }
+          }
+          categories {
+              nodes {
+                  name
+              }
+          }
+          title
+          excerpt
+          featuredImage {
+              node {
+                  uri
+                  link
+                  srcSet
+              }
+          }
+          commentCount
+          content
+          contentType {
+              node {
+                  name
+                  description
+              }
+          }
+      }
+  }
+}
